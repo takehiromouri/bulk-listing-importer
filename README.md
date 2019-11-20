@@ -1,5 +1,5 @@
 # Pre-requisites
-Doublish
+- Doublish
 
 ### Step 1
 Clone the repository
