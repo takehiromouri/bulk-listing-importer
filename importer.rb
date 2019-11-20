@@ -1,16 +1,10 @@
 require 'csv'
 
 IMAGE_FIELDS = ['Image 1', 'Image 2', 'Image 3', 'Image 4', 'Image 5', 'Image 6', 'Image 7', 'Image 8', 'Image 9', 'Image 10', 'Image 11', 'Image 12']
-CONDITIONS = {
- 'New': 5,
- 'Like new': 4,
- 'Good': 3,
- 'Fair': 2,
- 'Poor': 1
-}
+CONDITIONS = { 'New': 5, 'Like new': 4, 'Good': 3, 'Fair': 2, 'Poor': 1 }
 
-email = ""
-password = ""
+email = "" ## CHANGE VALUE HERE
+password = "" ## CHANGE VALUE HERE
 
 File.write('listing_cmds.txt', "set-staging\n", mode: 'a')
 File.write('listing_cmds.txt', "login #{email} #{password}\n", mode: 'a')
